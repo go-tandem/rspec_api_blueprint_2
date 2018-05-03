@@ -1,7 +1,6 @@
 require "rspec_api_blueprint/version"
 require "rspec_api_blueprint/string_extensions"
 
-
 RSpec.configure do |config|
   config.before(:suite) do
     if defined? Rails
@@ -18,7 +17,12 @@ RSpec.configure do |config|
   end
 
   config.after(:each, type: :request) do
-    response ||= last_response
+    if self.respond_to? :last_response
+      response ||= last_response  
+    else
+      response ||= response
+    end
+
     request ||= last_request
 
     if response

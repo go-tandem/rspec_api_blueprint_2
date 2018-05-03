@@ -4,10 +4,10 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'rspec_api_blueprint/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "rspec_api_blueprint"
+  spec.name          = "rspec_api_blueprint_2"
   spec.version       = RspecApiBlueprint::VERSION
-  spec.authors       = ["Matteo Depalo"]
-  spec.email         = ["matteodepalo@gmail.com"]
+  spec.authors       = ["Dayvson Lima"]
+  spec.email         = ["dayvsonlima31@gmail.com"]
   spec.description   = %q{Autogeneration of documentation from request specs}
   spec.summary       = %q{Autogeneration of documentation from request specs}
   spec.homepage      = ""
