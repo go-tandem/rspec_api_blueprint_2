@@ -8,7 +8,7 @@ You can find more about Blueprint at http://apiblueprint.org
 
 Add this line to your application's Gemfile:
 
-    gem 'rspec_api_blueprint', require: false
+    gem 'rspec_api_blueprint_2', require: false
 
 And then execute:
 
@@ -16,13 +16,13 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install rspec_api_blueprint
+    $ gem install rspec_api_blueprint_2
 
 ## Usage
 
 In your spec_helper.rb file add
 
-    require 'rspec_api_blueprint'
+    require 'rspec_api_blueprint_2'
 
 Write tests using the following convention:
 
@@ -38,7 +38,7 @@ Example:
           arena = create :arena, foursquare_id: '5104'
           get v1_arena_path(arena)
 
-          response.status.should eq(200)
+          expect(response).to have_http_status(:ok)
         end
       end
     end
