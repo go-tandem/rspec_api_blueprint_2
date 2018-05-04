@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["dayvsonlima31@gmail.com"]
   spec.description   = %q{Autogeneration of documentation from request specs}
   spec.summary       = %q{Autogeneration of documentation from request specs}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/dayvsonlima/rspec_api_blueprint_2"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
