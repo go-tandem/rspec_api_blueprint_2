@@ -16,7 +16,7 @@ RSpec.configure do |config|
     end
   end
 
-  config.after(:each, type: :request) do |example|
+  config.after(:each, type: :request, api_docs: true) do |example|
     if response
       example_group = example.metadata[:example_group]
       example_groups = []
